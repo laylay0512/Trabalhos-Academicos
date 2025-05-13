@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Acadêmicos Pro+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<main>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo Serviços Acadêmicos Pro+">
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+        
+    </header>
+
+    <section class="hero">
+        <h1>Trabalhos Acadêmicos <span class="destaque">Personalizados</span></h1>
+        <p>Produção de trabalhos, resumos, artigos, TCC, slides, formatação ABNT e muito mais com qualidade e rapidez.</p>
+        <a href="https://wa.me/5591988210306?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento" class="btn-hero">Fale Conosco</a>
+    </section>
+
+    <section class="servicos">
+        <div class="servico" onclick="abrirModal('modalAbnt')">
+            <h3>Formatação ABNT</h3>
+            <p>Organização de trabalhos com as normas atualizadas da ABNT.</p>
+        </div>
+        <div class="servico" onclick="abrirModal('modalSlides')">
+            <h3>Slides Profissionais</h3>
+            <p>Apresentações criativas, modernas e impactantes.</p>
+        </div>
+        <div class="servico" onclick="abrirModal('modalResumos')">
+            <h3>Resumos & Artigos</h3>
+            <p>Produção com qualidade e referências confiáveis.</p>
+        </div>
+    </section>
+
+
+    <!-- MODAL ABNT -->
+    <div class="modal" id="modalAbnt">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modalAbnt')">&times;</span>
+            <img src="img/abnt-info.png" alt="Informação ABNT">
+            <h2>Formatação ABNT</h2>
+            <p class="modal-texto">
+                Realizamos a formatação conforme as normas atualizadas da ABNT, garantindo clareza, estrutura e referências corretas.
+                <br><br>
+                Prazo de entrega: 1 a 3 dias úteis (dependendo do arquivo e disponibilidade). Inclui avaliação da Língua Portuguesa.
+            </p>
+            <a class="btn-whatsapp" href="https://wa.me/5591988210306?text=Olá,%20gostaria%20de%20colocar%20um%20trabalho%20em%20ABNT.%20Podemos%20fazer%20o%20orçamento?" target="_blank">
+                Mandar mensagem no WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- MODAL SLIDES -->
+    <div class="modal" id="modalSlides">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modalSlides')">&times;</span>
+            <img src="img/slides-info.png" alt="Informação Slides">
+            <h2>Slides Profissionais</h2>
+            <p class="modal-texto">
+                Criamos apresentações criativas, modernas e impactantes utilizando o Canva.
+                <br><br>
+                Prazo de entrega: 4 a 6 dias úteis, dependendo do tamanho e disponibilidade (podendo ser menos).
+                <br><br>
+                Entre em contato para orçamento personalizado.
+            </p>
+            <a class="btn-whatsapp" href="https://wa.me/5591988210306?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20slides%20profissionais." target="_blank">
+                Mandar mensagem no WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- MODAL RESUMOS -->
+    <div class="modal" id="modalResumos">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modalResumos')">&times;</span>
+            <img src="img/resumos-info.png" alt="Informação Resumos e Artigos">
+            <h2>Resumos & Artigos</h2>
+            <p class="modal-texto">
+                Produzimos resumos e artigos com qualidade, revisão e referências confiáveis.
+                <br><br>
+                Prazo de entrega: 7 a 10 dias úteis, dependendo do tamanho e disponibilidade (podendo ser menos).
+                <br><br>
+                Entre em contato para fazer o orçamento.
+            </p>
+            <a class="btn-whatsapp" href="https://wa.me/5591988210306?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20resumos%20ou%20artigos." target="_blank">
+                Mandar mensagem no WhatsApp
+            </a>
+        </div>
+    
+    </div>
+</main>
+
+    <footer>
+        © 2025 Serviços Acadêmicos Pro+
+    </footer>
+
+    <script>
+        function abrirModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function fecharModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+    </script>
+    
+</body>
+</html>
