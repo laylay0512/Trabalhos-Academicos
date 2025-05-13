@@ -31,9 +31,8 @@ main {
     flex: 1;
 }
 
-
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(33, 33, 33);
     padding: 8px;
     display: flex;
     justify-content: space-between;
@@ -63,6 +62,10 @@ nav a {
 
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     padding: 150px 20px 100px;
 }
